@@ -4,3 +4,4 @@ uvicorn
 openai
 pyodbc
 jinja2
+python-dotenv
