@@ -4,8 +4,16 @@ This project contains a Chainlit-based chat agent backed by Azure OpenAI and SQL
 
 ## Setup
 
-1. **Create an environment file**
-   - Copy `.env.example` to `.env` and fill in your Azure OpenAI and SQL Server credentials.
+1. **Create an environment file** named `.env` and fill in your Azure OpenAI and SQL Server credentials:
+   ```env
+   AZURE_OPENAI_API_KEY=your-key
+   AZURE_OPENAI_ENDPOINT=https://your-endpoint.openai.azure.com/
+   AZURE_OPENAI_DEPLOYMENT=your-deployment
+   DB_SERVER=your-db-server
+   DB_DATABASE=your-db-name
+   DB_USER=your-username
+   DB_PASSWORD=your-password
+   ```
 
 2. **Install dependencies**
    ```bash
