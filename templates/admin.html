@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+<h1>Agent Configuration</h1>
+<form action="/update" method="post">
+    <label>Instructions</label><br>
+    <textarea name="instructions" rows="5" cols="80">{{ config["instructions"] }}</textarea><br><br>
+    <label>Samples (JSON)</label><br>
+    <textarea name="samples" rows="10" cols="80">{{ config["samples"] | tojson }}</textarea><br><br>
+    <input type="submit" value="Save">
+</form>
+</body>
+</html>
