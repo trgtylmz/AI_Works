@@ -29,9 +29,8 @@ async def read_root(request: Request):
 
 @app.post("/update")
 async def update(instructions: str = Form(...), samples: str = Form("[]")):
-    config = {
-        "instructions": instructions,
-        "samples": json.loads(samples),
-    }
+    config = load_config()
+    config["instructions"] = instructions
+    config["samples"] = json.loads(samples)
     save_config(config)
     return RedirectResponse("/", status_code=303)
