@@ -1,0 +1,6 @@
+chainlit
+fastapi
+uvicorn
+openai
+pyodbc
+jinja2

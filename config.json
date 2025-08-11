@@ -1,0 +1,9 @@
+{
+  "instructions": "Ask a question about vehicle lifecycle and I will query the database.",
+  "samples": [
+    {
+      "question": "show last 10 vehicles",
+      "sql": "SELECT TOP 10 * FROM [DW].[FCT_VEHICLE_LIFECYCLE_WITH_ORDER_PLAN]"
+    }
+  ]
+}
